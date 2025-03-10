@@ -516,19 +516,19 @@ preset_keyboards:
       - {click: 4, label: 'GHI', swipe_up: 4, height: 50}
       - {click: 5, label: 'JKL', swipe_up: 5, height: 50}
       - {click: 6, label: 'MNO', swipe_up: 6, height: 50}
-      - {click: send_dot, width: 17, height: 50, name: dot}
+      - {click: function_rime_clear, width: 17, height: 50, name: dot}
 
       - {width: 17}
       - {click: 7, label: 'PQRS', swipe_up: 7, height: 50}
       - {click: 8, label: 'TUV', swipe_up: 8, height: 50}
       - {click: 9, label: 'WXYZ', swipe_up: 9, height: 50}
-      - {click: commit_halfat, width: 17, height: 50, name: halfat}
+      - {click: return, name: return, width: 17, height: 50, composing: confirm}
 
       # - {width: 1}
       - {click: eisu_toggle_符_dotsymbols, width: 17, height: 44, name: default}
-      - {click: eisu_toggle_123_number, width: 20, height: 44}
-      - {click: space, name: space, width: 26, height: 44}
-      - {click: eisu_toggle_ABC_english, width: 20, height: 44}
+      - {click: eisu_toggle_123_number, width: 12, height: 44}
+      - {click: space, name: space, width: 42, height: 44}
+      - {click: eisu_toggle_ABC_english, width: 12, height: 44}
       - {click: return, name: return, width: 17, height: 44, composing: confirm}
 
 
@@ -650,7 +650,7 @@ preset_keyboards:
       #4
       - {click: eisu_toggle_符_symbols, width: 14, name: symbol}
       - {click: eisu_toggle_123_number, width: 10, name: number}
-      - {click: send_dot, width: 10 }
+      - {click: send_dot, width: 11 }
       - {click: space, width: 31, name: space}
       #- {click: eisu_toggle_返回_default, width: 11, name: english}
       - {click: eisu_toggle_返回_default_schema_default, width: 11, name: english, preview: false}
@@ -907,6 +907,12 @@ preset_keys:
   mode_switch_pasteboard_monitoring_on_or_off: {icon: "arrow.triangle.2.circlepath.doc.on.clipboard", toggle: app_setting/pasteboard_monitoring_switch, send: Mode_switch, states: [ 剪切板监控关, 剪切板监控开 ], select: bim, name: Mode_switch}
   #启动显示系统信息
   mode_switch_system_info_on_or_off: {icon: "info.circle", toggle: app_setting/show_system_info, send: Mode_switch, states: [  系统信息关, 系统信息开 ], select: bim, name: Mode_switch}
+
+
+  #function
+  date: {label: "☀", send: function, command: date, option: "yy.MM.d"}
+  #清屏操作。option可带参数。0为上屏第一个候选；无参数为则不上屏。
+  function_rime_clear: {label: "重输", send: function, command: candidate.clear, option: ""}
 
 
   #mask
