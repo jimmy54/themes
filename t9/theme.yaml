@@ -128,7 +128,7 @@ preset_candidates:
   #注意：
   #1,图片拉伸参数，必须4个参数(top, left, bottom, right)都有，否则不生效.
   #2,同时有back_color和back_image时，back_image生效.
-preset_color_schemes:
+preset_color_schemas:
    default:
 
     primary-100: &primary-100 0x2E8B57
@@ -505,25 +505,25 @@ preset_keyboards:
     keys:
       #1
       # - {width: 1}
-      - {collection: ["，", "。", "？", "！", "…", "~", "'", "、"], width: 17, height: 165, row_height: 39, row_vertical_gap: 3, show_row_back_image: false, name: table}
+      - {collection: ["，", "。", "？", "！", "…", "~", "'", "、"], width: 17, height: 162, row_height: 39, row_vertical_gap: 3, show_row_back_image: false, name: table}
       - {click: 1, label: '分词', swipe_up: 1, height: 50}
-      - {click: 2, label: 'ABC', swipe_up: 2, height: 50}
-      - {click: 3, label: 'DEF', swipe_up: 3, height: 50}
+      - {click: a, label: 'ABC', swipe_up: 2, height: 50}
+      - {click: d, label: 'DEF', swipe_up: 3, height: 50}
       - {click: backspace, width: 17, height: 50, name: backspace}
 
       # # #2
       - {width: 17}
-      - {click: 4, label: 'GHI', swipe_up: 4, height: 50}
-      - {click: 5, label: 'JKL', swipe_up: 5, height: 50}
-      - {click: 6, label: 'MNO', swipe_up: 6, height: 50}
+      - {click: g, label: 'GHI', swipe_up: 4, height: 50}
+      - {click: j, label: 'JKL', swipe_up: 5, height: 50}
+      - {click: m, label: 'MNO', swipe_up: 6, height: 50}
       - {click: function_rime_clear, width: 17, height: 50, name: dot}
 
       ## #3
       - {width: 17}
-      - {click: 7, label: 'PQRS', swipe_up: 7, height: 50}
-      - {click: 8, label: 'TUV', swipe_up: 8, height: 50}
-      - {click: 9, label: 'WXYZ', swipe_up: 9, height: 50}
-      - {click: return, name: return, width: 17, height: 98, composing: confirm}
+      - {click: p, label: 'PQRS', swipe_up: 7, height: 50}
+      - {click: t, label: 'TUV', swipe_up: 8, height: 50}
+      - {click: w, label: 'WXYZ', swipe_up: 9, height: 50}
+      - {click: return, name: return, width: 17, height: 100, composing: confirm}
       ## #4
       - {click: eisu_toggle_符_dotsymbols, width: 17, height: 44, name: default}
       - {click: eisu_toggle_123_number, width: 12, height: 44}
