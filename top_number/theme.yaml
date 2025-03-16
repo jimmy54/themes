@@ -128,7 +128,7 @@ preset_candidates:
   #注意：
   #1,图片拉伸参数，必须4个参数(top, left, bottom, right)都有，否则不生效.
   #2,同时有back_color和back_image时，back_image生效.
-preset_color_schemas:
+preset_color_schemes:
    default:
 
     primary-100: &primary-100 0x2E8B57
