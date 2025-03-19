@@ -515,14 +515,14 @@ preset_keyboards:
       - {click: j, width: 20, label: 'JK', swipe_up: commit_9, long_click: [commit_j, commit_J, commit_9, commit_k, commit_K]}
       - {click: l, width: 20, label: 'L', swipe_up: commit_0, long_click: [commit_l, commit_L, commit_0, commit_l, commit_L]}
       #3
-      - {click: "'", label: 分词, width: 13}
-      - {width: 3}
+      - {click: "'", label: 分词, width: 15}
+      - {width: 1}
       - {click: z, width: 17, label: 'ZX', swipe_up: commit_halfat, long_click: [commit_z, commit_Z, commit_halfat, commit_x, commit_X]}
       - {click: c, width: 17, label: 'CV', swipe_up: commit_fullquestionmark, swipe_down: commit_halfquestionmark, long_click: [commit_c, commit_C, commit_halfquestionmark, commit_v, commit_V]}
       - {click: b, width: 17, label: 'BN', swipe_up: commit_halfcomma, swipe_down: commit_fullcomma, long_click: [commit_b, commit_Q, commit_fullcomma, commit_w, commit_W]}
       - {click: m, width: 17, label: 'M', swipe_up: commit_halfdot, swipe_down: commit_fulldot, ick: [commit_m, commit_fulldot, commit_M]}
-      - {width: 3}
-      - {click: backspace, width: 13}
+      - {width: 1}
+      - {click: backspace, width: 15}
       #4
       - {click: eisu_toggle_符_symbols, width: 16, name: symbol, preview: false}
       - {click: eisu_toggle_123_number, has_menu: text_halfperiod, width: 16, name: number, preview: false}
